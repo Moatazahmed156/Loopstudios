@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: Handlee, Arial;
+  font-family: Roboto;
 }
 .header {
   position: relative;
@@ -15,6 +15,7 @@ body {
   img {
     width: 100%;
     display: block;
+    height: 100%;
   }
   .navbar {
     position: absolute;
@@ -32,15 +33,17 @@ body {
       display: flex;
       list-style: none;
       width: 40%;
+      min-width: 400px;
       justify-content: space-between;
       a {
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.8);
         font-weight: bold;
-        font-size: 18px;
+        font-size: 15px;
+        transition: 0.2s ease;
       }
       a:hover {
-        color: rgb(182, 182, 182);
+        color: rgb(255, 255, 255);
       }
     }
   }
@@ -50,16 +53,17 @@ body {
     left: 10%;
     color: white;
     border: 2px solid white;
-    font-size: 2.5rem;
-    width: 35%;
-    min-width: 700px;
+    font-size: 2rem;
+    width: 30%;
+    min-width: 600px;
+    min-height: 150px;
     padding: 20px;
     h1 {
       width: 90%;
       text-transform: uppercase;
       margin: 0px;
-      font-weight: 100;
-      color: rgba(255, 255, 255, 0.9);
+      font-weight: 200;
+      color: rgb(255, 255, 255);
     }
   }
 }
@@ -73,21 +77,22 @@ body {
 .caption {
   display: flex;
   justify-content: center;
-  width: 80%;
-  margin: 200px;
+  width: 100%;
+  margin: 150px 0px;
   .text {
     width: 30%;
-    min-width: 450px;
+    min-width: 390px;
     border: 1px solid white;
     position: relative;
     padding: 70px 0px 70px 70px;
-    right: 150px;
+    right: 120px;
     background-color: white;
-    top: 180px;
+    top: 140px;
+    margin-bottom: 20px;
     h2 {
       text-transform: uppercase;
       font-size: 50px;
-      font-weight: 100;
+      font-weight: 300;
       margin-bottom: 20px;
     }
     p {
@@ -95,8 +100,8 @@ body {
     }
   }
   img {
-    width: 50%;
-    min-width: 600px;
+    width: 40%;
+    max-height: 400px;
   }
 }
 .creations {
@@ -161,6 +166,7 @@ body {
     bottom: 30px;
     left: 30px;
     font-size: 2rem;
+    font-weight: 200;
     color: white;
     text-transform: uppercase;
     width: 70%;
@@ -177,23 +183,28 @@ body {
     width: 80%;
     padding: 20px 0;
     .left {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
       h2 {
-        margin: 0 0 20px 0;
+        margin: 0 0 10px 0;
         font-size: 25px;
       }
       ul {
         display: flex;
         list-style: none;
         justify-content: space-between;
+        margin-top: 10px;
         width: 100%;
         padding: 0px;
         gap: 20px;
         a {
           text-decoration: none;
-          color: rgba(255, 255, 255, 0.9);
+          color: rgba(255, 255, 255, 0.8);
         }
         a:hover {
-          color: rgb(182, 182, 182);
+          color: rgb(255, 255, 255);
         }
       }
     }
@@ -204,10 +215,11 @@ body {
       justify-content: center;
       .icons {
         display: flex;
-        gap: 15px;
+        gap: 18px;
         a {
           color: rgba(255, 255, 255, 0.9);
           text-decoration: none;
+          font-size: 22px;
         }
       }
       p {
@@ -332,6 +344,9 @@ body {
     flex-direction: column;
     align-items: center;
     .left {
+      h2 {
+        margin-bottom: 20px !important;
+      }
       ul {
         gap: 5px;
         flex-direction: column;
