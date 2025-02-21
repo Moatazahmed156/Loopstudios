@@ -8,7 +8,7 @@ body {
   position: relative;
   color: white;
   height: 100vh;
-  max-height: 800px;
+  max-height: 1000px;
   i {
     display: none;
   }
@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
     width: 80%;
     h2 {
-      font-size: 28px;
+      font-size: 30px;
     }
     ul {
       display: flex;
@@ -39,7 +39,7 @@ body {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.8);
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         transition: 0.2s ease;
       }
       a:hover {
@@ -54,8 +54,9 @@ body {
     color: white;
     border: 2px solid white;
     font-size: 2.5rem;
-    width: 35%;
+    width: 33%;
     min-width: 600px;
+    min-height: 150px;
     padding: 20px;
     h1 {
       width: 90%;
@@ -76,11 +77,11 @@ body {
 .caption {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 150px 0px;
+  width: 80%;
+  margin: 170px 0px 200px;
   .text {
     width: 30%;
-    min-width: 390px;
+    min-width: 450px;
     border: 1px solid white;
     position: relative;
     padding: 70px 0px 70px 70px;
@@ -99,8 +100,8 @@ body {
     }
   }
   img {
-    width: 37%;
-    max-height: 390px;
+    width: 50%;
+    max-height: 600px;
   }
 }
 .creations {
